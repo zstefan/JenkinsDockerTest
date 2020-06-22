@@ -12,7 +12,7 @@ node('OTE_Agent')  {
 
     stage('Run') {
 
-        sh 'docker build . -t hello-world:1.0.0'
+        sh 'docker run --rm -it hello-world:1.0.0'
     }
 
     
